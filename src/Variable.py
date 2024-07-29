@@ -1,2 +1,6 @@
+import wx
+app = wx.App()
 largo = 800
 ancho = 600
+#FUENTE==========================================================================
+font = wx.Font(12, wx.FONTFAMILY_MODERN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL)
