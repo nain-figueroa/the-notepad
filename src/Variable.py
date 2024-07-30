@@ -9,3 +9,10 @@ font = wx.Font(12, wx.FONTFAMILY_MODERN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORM
 abierto = False
 archivo_abierto = ''
 guardado = False
+
+idioma = 'ES'
+
+#ESPACIO DE TRABAJO======================================================================
+lin = 1
+col = 1
+lin_col = (lin, col)

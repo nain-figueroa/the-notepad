@@ -12,8 +12,10 @@ class Notepad(wx.Panel):
         sizer_general = wx.BoxSizer(wx.VERTICAL)
 
         #CUADRO DE TEXTO=================================================================
-        self.espacio_escritura = wx.TextCtrl(self,size=pantalla.GetSize() ,style=wx.TE_RICH2|wx.TE_DONTWRAP|wx.TE_MULTILINE)
+        self.espacio_escritura = wx.TextCtrl(self,size=pantalla.GetSize() ,style=wx.TE_RICH2|wx.TE_DONTWRAP|wx.TE_MULTILINE|wx.TE_PROCESS_TAB|wx.TE_PROCESS_ENTER)
         self.espacio_escritura.SetFont(Variable.font)
+
+        self.espacio_escritura.SetFocus()
 
         #ACOMODO=========================================================================
         sizer_general.Add(self.espacio_escritura, flag=wx.EXPAND|wx.ALL)
